@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+{% block nowe %}
+    {% if category_product %}
+        {% for product in category_product %}
+        <p><a href="/products/{{ product.id }}"> {{ product.name }} </a></p>
+        {% endfor %}
+    {% else %}
+    {% endif %}
+{% endblock %}
+</body>
+</html>

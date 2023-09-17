@@ -1,0 +1,33 @@
+/* Styl dla diva z klasą "logo" */
+.logo {
+    text-align: center;
+    background-color: #333;
+    color: red; /* Kolor tekstu czerwony */
+    padding: 10px;
+}
+
+/* Styl dla diva z klasą "clear" */
+.clear {
+    clear: both;
+}
+
+/* Styl dla diva z klasą "sidebar" */
+.sidebar {
+    width: 200px;
+    float: left;
+    padding: 10px;
+}
+
+/* Styl dla diva z klasą "main-content" */
+.main-content {
+    width: 700px;
+    float: left;
+    padding: 10px;
+}
+
+/* Styl dla h3 z klasą "color" wewnątrz diva z klasą "sidebar" */
+.sidebar .color {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue; /* Kolor tekstu niebieski */
+}
