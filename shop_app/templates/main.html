@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="{% static 'img/logo-no-background.png' %}">
+        <h1 class="logo-text"> WYSZUKIWARKA WYLOGUJ</h1>
+    </div>
+    <div class="clear"></div>
+    <div class="sidebar">
+        <h3 class="color">KATEGORIE:</h3>
+        {% for kat in category %}
+        <p><a href="/categories/{{ kat.id }}"> {{ kat.name }}</a></p>
+        {% endfor %}
+    </div>
+    <div class="main-content">
+        {% block nowe %} {% endblock %}
+    </div>
+    <footer class="stopka">
+        <h1>KONTAKT</h1>
+    </footer>
