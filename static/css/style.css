@@ -86,15 +86,17 @@ body {
 
 }
 .stopka {
-    color: #082346;
-    background-color: #B8F6FE;
+    color:  #0672FC;
     text-align: center;
     padding: 10px;
     clear: both;
+    font-size: 25px;
     border-top: 2px solid #25CBF2; /* Górna czarna linia */
     border-bottom: 2px solid #25CBF2; /* Dolna czarna linia */
     border-radius: 20px; /* Zaokrąglij ramkę */
 }
+
+
 
 .category-link {
     font-size: 17px;
