@@ -1,0 +1,95 @@
+/* Resetowanie domyślnych stylów przeglądarek */
+body, h1, h2, h3, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Styl dla całej strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Styl dla diva z klasą "logo" */
+.logo {
+    text-align: center;
+    background-color: #EFDBD4;
+    color: red; /* Kolor tekstu czerwony */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Styl dla napisu "LOGO SKLEPU WYSZUKIWARKA" */
+.logo-text {
+    color: #6565F5; /* Kolor tekstu czerwony */
+    margin: 0; /* Usuń domyślne marginesy dla tekstu */
+    font-size: 50px; /* Dostosuj rozmiar czcionki */
+    margin-left: 300px; /* Dodaj odstęp między tekstem a obrazkiem */
+}
+
+/* Styl dla diva z klasą "clear" */
+.clear {
+    clear: both;
+}
+
+/* Styl dla diva z klasą "sidebar" */
+.sidebar {
+    width: 200px;
+    padding: 10px;
+    background-color: #EFDBD4;
+}
+
+/* Styl dla linków kategorii */
+.sidebar a {
+    font-size: 17px; /* Rozmiar czcionki */
+    font-weight: bold; /* Tekst pogrubiony */
+    text-decoration: none; /* Usuń podkreślenie odnośników */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
+}
+
+/* Styl dla linków kategorii po najechaniu myszką */
+.sidebar a:hover {
+    text-decoration: none; /* Podkreśl link po najechaniu myszką */
+    color: red; /* Możesz zachować kolor niebieski lub zmienić na inny */
+}
+
+/* Styl dla h3 z klasą "color" wewnątrz diva z klasą "sidebar" */
+.sidebar .color {
+    font-size: 25px;
+    font-weight: bold;
+    color: blue; /* Kolor tekstu niebieski */
+}
+
+/* Styl dla diva z klasą "main-content" */
+.main-content {
+    padding: 10px;
+    background-color: #EFDBD4;
+}
+
+/* Styl dla stopki */
+.stopka {
+    color: black;
+    background-color: #EFDBD4;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    border-top: 2px solid black; /* Górna czarna linia */
+    border-bottom: 2px solid black; /* Dolna czarna linia */
+}
+
+.category-link {
+    font-size: 17px; /* Rozmiar czcionki */
+    font-weight: bold; /* Tekst pogrubiony */
+    text-decoration: none; /* Usuń podkreślenie odnośników */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
+}

@@ -1,19 +1,13 @@
-/* Styl dla całej strony */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #F5F8F9;
-    color: #333;
-}
-
 /* Styl dla diva z klasą "logo" */
 .logo {
     text-align: center;
+    background-color: /*#EFDBD4;*/
     color: red; /* Kolor tekstu czerwony */
     padding: 10px;
-
+    display: flex;
+    align-items: center;
 
 }
-
 .logo img {
     width: 200px;
     height: auto;
@@ -23,14 +17,10 @@ body {
 
 /* Styl dla napisu "LOGO SKLEPU WYSZUKIWARKA" */
 .logo-text {
-    color: #0672FC; /* Kolor tekstu czerwony */
+    color: #6565F5; /* Kolor tekstu czerwony */
     margin: 0; /* Usuń domyślne marginesy dla tekstu */
     font-size: 50px; /* Dostosuj rozmiar czcionki */
-}   transition: color 0.3s;
-
-/* Po najechaniu myszką zmień kolor na ciemniejszy */
-.logo-text:hover {
-    color: #023; /* Kolor tekstu ciemniejszy (np. czarny) */
+    margin-left: 300px; /* Dodaj odstęp między tekstem a obrazkiem */
 }
 
 
@@ -45,12 +35,6 @@ body {
     float: left;
     padding: 10px;
     background-color: /*#EFDBD4*/;
-    border: 2px solid #25CBF2; /* Ustaw kolor obramowania na #A1D0DB i dodaj grubsze obramowanie wokół bocznego menu */
-    border-radius: 10px; /* Zaokrąglij ramkę */
-    box-sizing: border-box; /* Ustala box-sizing na border-box, aby padding i obramowanie nie wpływały na szerokość */
-
-    /* Dodaj cień */
-    box-shadow: 0 0 1px blue; /* Tu użyłem niebieskiego koloru cienia, możesz dostosować go do swoich preferencji */
 }
 /* Styl dla linków kategorii */
 .sidebar a {
@@ -58,13 +42,12 @@ body {
     font-weight: bold; /*tekst pogrubiony */
     text-decoration: none; /* Usuń podkreślenie odnośników */
     color: blue; /* Ustaw kolor tekstu na niebieski */
-    transition: background-color 0.3s; /* Dodaj płynny efekt przejścia */
 }
 
 /* Styl dla linków kategorii po najechaniu myszką */
 .sidebar a:hover {
-    background-color: #A1D0DB; /* Kolor podświetlenia po najechaniu myszką */
-    color: white; /* Zmiana koloru tekstu po najechaniu myszką */
+    text-decoration: none; /* Podkreśl link po najechaniu myszką */
+    color: blue; /* Możesz zachować kolor niebieski lub zmienić na inny */
 }
 
 /* Styl dla h3 z klasą "color" wewnątrz diva z klasą "sidebar" */
@@ -86,29 +69,21 @@ body {
 
 }
 .stopka {
-    color: #082346;
-    background-color: #B8F6FE;
+    color: black;
+    background-color: /*#EFDBD4;*/;
     text-align: center;
     padding: 10px;
     clear: both;
-    border-top: 2px solid #25CBF2; /* Górna czarna linia */
-    border-bottom: 2px solid #25CBF2; /* Dolna czarna linia */
-    border-radius: 20px; /* Zaokrąglij ramkę */
+    border-top: 2px solid black; /* Górna czarna linia */
+    border-bottom: 2px solid black; /* Dolna czarna linia */
 }
 
 .category-link {
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: none;
-    color: blue;
-    transition: background-color 0.3s, color 0.3s; /* Dodaj płynny efekt przejścia dla tła i koloru tekstu */
+    font-size: 17px; /*rozmiar czczionki*/
+    font-weight: bold; /*tekst pogrubiony */
+    text-decoration: none; /* Usuń podkreślenie odnośników */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
 }
-
-.category-link:hover {
-    background-color: #A1D0DB; /* Kolor podświetlenia po najechaniu myszką */
-    color: white; /* Zmiana koloru tekstu po najechaniu myszką */
-}
-
 
 
 /*css dla pliku product.html*/
@@ -158,9 +133,6 @@ body {
     margin: 10px; /* Dodaj odstęp między produktami */
     padding: 10px;
     background-color: /*#EFDBD4*/;
-    border: 2px solid #A1D0DB; /* Dodaj grubsze obramowanie wokół produktów */
-    border-radius: 10px; /* Zaokrąglij ramkę */
+    border: 1px solid #ddd; /* Dodaj obramowanie wokół produktów */
     box-sizing: border-box; /* Ustala box-sizing na border-box, aby padding i obramowanie nie wpływały na szerokość */
-    box-shadow: 0 0 1px blue; /* Tu użyłem niebieskiego koloru cienia, możesz dostosować go do swoich preferencji */
-}
 }

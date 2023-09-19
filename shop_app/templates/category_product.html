@@ -13,10 +13,11 @@
         {% if category_product %}
             {% for product in category_product %}
             <div class="product-item">
-                <p><a href="/products/{{ product.id }}" class="category-link"> {{ product.name }} </a></p>
+                <p><a href="/products/{{ product.id }}" class="category-link">{{ product.name }}</a></p>
             </div>
             {% endfor %}
         {% else %}
+            <p>Brak produktów w tej kategorii.</p>
         {% endif %}
     </div>
 {% endblock %}

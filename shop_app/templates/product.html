@@ -9,18 +9,19 @@
 <body>
 {% block nowe %}
     {% if product_user %}
-        <h1 class="color-product">Kategoria: {{product_user.category}}</h1>
-        <h1 class="color-product-h1"> {{ product_user.name }} </h1>
-        <p class="color-product">Producent: {{ product_user.producer }} </p>
+        <h1 class="color-product">Kategoria: {{ product_user.category }}</h1>
+        <h1 class="color-product-h1">{{ product_user.name }}</h1>
+        <p class="color-product">Producent: {{ product_user.producer }}</p>
         <br><br>
-        <p class="opis">Opis:</p>
-        <p class="color-product-description"> {{ product_user.description }} </p>
-        <p class="opis"> Cena: {{ product_user.price }} </p>
-
+        <div class="product-description">
+            <p class="opis">Opis:</p>
+            <p class="color-product-description">{{ product_user.description }}</p>
+            <p class="opis_line">Cena: {{ product_user.price }}</p>
+        </div>
     {% else %}
-        <p> Nie ma produktu o takim id.</p>
-
+        <p>Nie ma produktu o takim ID.</p>
     {% endif %}
-{% endblock  %}
+{% endblock %}
+
 </body>
 </html>
