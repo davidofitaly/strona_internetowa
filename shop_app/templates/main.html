@@ -4,11 +4,11 @@
 <head>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
-<body>
+<body class="black-text">
     <div class="logo">
+        <a href='http://127.0.0.1:8000/'>
         <img src="{% static 'img/logo-no-background.png' %}">
         <h1 class="logo-text"> ZALOGUJ</h1>
-
     </div>
     <div class="class"></div>
     <div class="sidebar">
@@ -20,7 +20,20 @@
     <div class="main-content">
         {% block nowe %} {% endblock %}
     </div>
-    <footer class="stopka">
-        <h1>KONTAKT</h1>
-    </footer>
+ <footer class="stopka">
+    <div class="footer-item">
+        <p class="footer-link">About</p>
+    </div>
+    <div class="footer-item">
+        <p class="footer-link">Contact</p>
+    </div>
+    <div class="footer-item">
+        <p class="footer-link">Privacy</p>
+    </div>
+    <div class="footer-item">
+        <p class="footer-link">Media</p>
+    </div>
+</footer>
+</body>
+</html>
 

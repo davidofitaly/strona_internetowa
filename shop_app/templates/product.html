@@ -14,9 +14,9 @@
         <p class="color-product">Producent: {{ product_user.producer }}</p>
         <br><br>
         <div class="product-description">
-            <p class="opis">Opis:</p>
+            <p class="opis-product">Opis:</p>
             <p class="color-product-description">{{ product_user.description }}</p>
-            <p class="opis_line">Cena: {{ product_user.price }}</p>
+            <span class="opis_line cena">Cena: {{ product_user.price }}</span>
         </div>
     {% else %}
         <p>Nie ma produktu o takim ID.</p>

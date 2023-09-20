@@ -1,36 +1,48 @@
 /* Styl dla całej strony */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F8F9;
-    color: #333;
+    background-image: url('/static/img/fernando.jpg'); /* Ścieżka do obrazu w Twoich plikach statycznych */
+    background-size: cover; /* Dostosuj rozmiar tła do wielkości okna przeglądarki */
+    background-repeat: no-repeat; /* Wyłącz powtarzanie tła */
+    color: #000;
 }
+body.black-text {
+    color: #000; /* Ustaw kolor tekstu na czarny */
+}
+
 
 /* Styl dla diva z klasą "logo" */
 .logo {
     text-align: center;
-    color: red; /* Kolor tekstu czerwony */
     padding: 10px;
-
-
+    position: relative; /* Dodaj pozycjonowanie względem rodzica */
+    height: 200px;
 }
 
 .logo img {
-    width: 200px;
+    width: 550px;
     height: auto;
     float: left;
     margin-right: 10px;
 }
 
-/* Styl dla napisu "LOGO SKLEPU WYSZUKIWARKA" */
+/* Styl dla napisu "ZALOGUJ" */
 .logo-text {
-    color: #0672FC; /* Kolor tekstu czerwony */
+    color: #0672FC; /* Kolor tekstu niebieski */
     margin: 0; /* Usuń domyślne marginesy dla tekstu */
     font-size: 50px; /* Dostosuj rozmiar czcionki */
-}   transition: color 0.3s;
+    transition: color 0.3s; /* Dodaj płynny efekt przejścia dla koloru tekstu */
+    display: inline-block; /* Ustaw napis jako element inline-block, aby można było wyśrodkować */
+    border: 2px solid #25CBF2; /* Dodaj obramowanie */
+    padding: 5px 10px; /* Dodaj wypełnienie wewnątrz napisu */
+    border-radius: 5px; /* Zaokrąglij ramkę */
+}
 
 /* Po najechaniu myszką zmień kolor na ciemniejszy */
 .logo-text:hover {
     color: #023; /* Kolor tekstu ciemniejszy (np. czarny) */
+    background-color: #A1D0DB; /* Kolor podświetlenia po najechaniu myszką */
+    color: blue; /* Zmiana koloru tekstu na biały po najechaniu myszką */
 }
 
 
@@ -44,7 +56,6 @@ body {
     width: 200px;
     float: left;
     padding: 10px;
-    background-color: /*#EFDBD4*/;
     border: 2px solid #25CBF2; /* Ustaw kolor obramowania na #A1D0DB i dodaj grubsze obramowanie wokół bocznego menu */
     border-radius: 10px; /* Zaokrąglij ramkę */
     box-sizing: border-box; /* Ustala box-sizing na border-box, aby padding i obramowanie nie wpływały na szerokość */
@@ -86,14 +97,40 @@ body {
 
 }
 .stopka {
-    color:  #0672FC;
+    color: #0672FC;
     text-align: center;
     padding: 10px;
     clear: both;
     font-size: 25px;
-    border-top: 2px solid #25CBF2; /* Górna czarna linia */
-    border-bottom: 2px solid #25CBF2; /* Dolna czarna linia */
-    border-radius: 20px; /* Zaokrąglij ramkę */
+    border: 2px solid #25CBF2;
+    border-top: 2px solid #25CBF2;
+    border-bottom: 2px solid #25CBF2;
+    border-radius: 20px;
+}
+
+/* Styl dla elementów w stopce */
+.footer-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 2px solid #A1D0DB;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styl dla elementów w stopce po najechaniu myszką */
+.footer-item:hover {
+    background-color: #A1D0DB;
+    color: white;
+}
+
+/* Styl dla tekstu w stopce */
+.footer-link {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+    margin: 0;
 }
 
 
@@ -103,7 +140,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: blue;
-    transition: background-color 0.3s, color 0.3s; /* Dodaj płynny efekt przejścia dla tła i koloru tekstu */
+    transition: 0.3s /* Dodaj płynny efekt przejścia dla tła i koloru tekstu */
 }
 
 .category-link:hover {
@@ -145,13 +182,25 @@ body {
 
 }
 .opis_line {
+    font-weight: bold;
+    font-size:30px;
+    color:blue;
 
 }
+
+.cena:hover {
+    background-color: #FF0000; /* Kolor podświetlenia po najechaniu myszką (czerwony) */
+    color: white; /* Zmiana koloru tekstu na biały po najechaniu myszką */
+    transition: background-color 0.3s, color 0.3s; /* Dodaj płynny efekt przejścia dla tła i koloru tekstu */
+    transition: 0.3s;
+}
+
 /* style dla category_product.html */
 /* Styl dla diva z klasą "product-list" */
 .product-list {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 /* Styl dla diva z klasą "product-item" */
@@ -165,4 +214,18 @@ body {
     box-sizing: border-box; /* Ustala box-sizing na border-box, aby padding i obramowanie nie wpływały na szerokość */
     box-shadow: 0 0 1px blue; /* Tu użyłem niebieskiego koloru cienia, możesz dostosować go do swoich preferencji */
 }
+
+.opis-product {
+    color:blue;
+    font-size: 25px;
+    font-weight: bold; /*tekst pogrubiony */
 }
+
+
+.null-product{
+    font-size:25px;
+    font-weight: bold; /*tekst pogrubiony */
+}
+
+
+
