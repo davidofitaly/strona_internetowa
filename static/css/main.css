@@ -1,0 +1,267 @@
+/*--------------------------------------------------------MAIN.HTML---------------------------------------------------*/
+
+
+/*------------------------------
+            0.GENERAL
+------------------------------*/
+
+
+/* Styl dla całej strony */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/img/pexels.jpg'); /* Ścieżka do obrazu w Twoich plikach statycznych */
+    background-size: cover; /* Dostosuj rozmiar tła do wielkości okna przeglądarki */
+    background-repeat: no-repeat; /* Wyłącz powtarzanie tła */
+    color: #000;
+}
+
+body.black-text {
+    color: #000; /* Ustaw kolor tekstu na czarny */
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*------------------------------
+            1.logo
+------------------------------*/
+
+
+/* Styl dla diva z klasą "logo" */
+.logo {
+    text-align: center; /* wyśrodkowanie zawartości elementu */
+    padding: 10px; /* odstęp od zawartości */
+    position: relative; /* dodaje pozycjonowanie względem rodzica */
+    height: 200px; /* ustawia wysokość */
+}
+
+/* Styl dla obrazka */
+.logo img {
+    width: 200px; /* ustawia szerokość */
+    height: auto; /* ustawia wyokość */
+    float: left; /* ustawia obrazek po lewej strony swojego kontenera */
+
+}
+
+
+/* Styl dla napisu "ZALOGUJ" */
+.logo-text {
+    color: blue; /* kolor tekstu niebieski */
+    margin: 0; /* usuwa domyślne marginesy dla tekstu */
+    font-size: 50px; /* dostosowuje rozmiar czcionki */
+    transition: color 0.3s; /* dodaje płynny efekt przejścia dla koloru tekstu */
+    display: inline-block; /* ustawia napis jako element inline-block, aby można było wyśrodkować */
+    border: 2px solid #25CBF2; /* dodaje obramowanie */
+    padding: 5px 20px; /* dodaje wypełnienie wewnątrz napisu - odstep od zawartości */
+    border-radius: 5px; /* zaokrągla ramkę */
+    box-shadow: 0px 0px 10px blue; /* uzycie niebieskiego koloru cienia*/
+}
+
+/* Po najechaniu myszką zmień kolor na ciemniejszy */
+.logo-text:hover {
+    color: #023; /* Kolor tekstu ciemniejszy (np.czarny) */
+    background-color: #A1D0DB; /* kolor podświetlenia po najechaniu myszką */
+    color: blue; /* zmiana koloru tekstu na biały po najechaniu myszką */
+}
+
+
+/*------------------------------
+            2.sidebar
+------------------------------*/
+
+
+/* Styl dla diva z klasą "sidebar" */
+.sidebar {
+    width: 200px; /* ustawia szerokosc */
+    float: left; /* ustawia zawartosc po lewej stronie kontenera */
+    padding: 20px; /* ustawia odstep od zawartosci */
+    border: 1px solid #25CBF2; /* ustawia kolor obramowania i dodaje grubsze obramowanie wokół bocznego menu */
+    border-radius: 10px; /* zaokrągla ramkę */
+    box-sizing: border-box; /* ustala box-sizing na border-box, aby padding i obramowanie nie wpływały na szerokość */
+    box-shadow: 0px 0px 10px blue; /* uzycie niebieskiego koloru cienia*/
+    margin-bottom: 20px;
+}
+/* Styl dla pseudo-elementu ::before */
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(161, 208, 219, 0.5); /* Kolor tła z nieco przeźroczystym efektem */
+    z-index: -1; /* Ustaw niższą warstwę z-index, aby umożliwić tekstu znajdować się na wierzchu */
+}
+
+/* Styl dla linków kategorii */
+.sidebar a {
+    font-size: 18px; /*rozmiar czczionki*/
+    font-weight: bold; /*tekst pogrubiony */
+    text-decoration: none; /* Usuń podkreślenie odnośników */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
+    transition: background-color 0.3s; /* Dodaj płynny efekt przejścia */
+}
+
+/* Styl dla linków kategorii po najechaniu myszką */
+.sidebar a:hover {
+    background-color: #A1D0DB; /* kolor podświetlenia po najechaniu myszką */
+    color: white; /* zmiana koloru tekstu po najechaniu myszką */
+}
+
+/* Styl dla h3 z klasą "sidebar" */
+.sidebar h3 {
+    font-size: 25px; /* rozmiar czczionki */
+    font-weight: bold; /* tekst pogrubiony */
+    color: blue; /* kolor tekstu niebieski */
+}
+
+/*------------------------------
+            3.main-content
+------------------------------*/
+
+
+/* Styl dla diva z klasą "main-content" */
+.main-content {
+    width: 700px;
+    float: left;
+    padding: 18px;
+    color: blue;
+    margin: 10px;
+    border: 1px solid #25CBF2; /* ustawia kolor obramowania i dodaje grubsze obramowanie wokół bocznego menu */
+    border-radius: 10px; /* zaokrągla ramkę */
+    box-shadow: 0px 0px 10px blue; /* uzycie niebieskiego koloru cienia*/
+
+
+
+/*------------------------------
+            4.footer
+------------------------------*/
+
+
+}
+.stopka {
+    color: #0672FC; /* ustawia kolor */
+    text-align: center; /* wyśrodkowanie zawartości elementu */
+    padding: 10px; /* ustawia odstep od zawartosci */
+    clear: both;
+    margin-top: 20px;
+    font-size: 25px; /* ustawia rozmiar czczionki */
+    border: 2px solid #25CBF2; /* dodaje obramowanie */
+    border-radius: 10px; /* zaokrągla ramke */
+    box-shadow: 0px 0px 10px blue; /* uzycie niebieskiego koloru cienia*/
+}
+
+/* Styl dla elementów w stopce */
+.footer-item {
+    display: inline-block; /* ustawia napis jako element inline-block, aby można było wyśrodkować */
+    margin: 10px; /* ustawia margines */
+    padding: 5px 10px; /* ustawia odleglosc od zawartosci */
+    border: 2px solid #A1D0DB; /* dodaje obramowanie */
+    box-shadow: 0px 0px 10px blue; /* uzycie niebieskiego koloru cienia*/
+    border-radius: 5px; /* zaokragla ramke */
+    transition: 0.3s /* Dodaj płynny efekt przejścia */
+}
+
+/* Styl dla elementów w stopce po najechaniu myszką */
+.footer-item:hover {
+    background-color: #A1D0DB; /* ustawia kolor tła */
+    color: white;  /* ustawia kolor */
+}
+
+/* Styl dla tekstu w stopce */
+.footer-link {
+    font-size: 17px; /* ustawia rozmiar */
+    font-weight: bold; /* tekst pogrubiony */
+    text-decoration: none; /* usuwa dekoracje z linku */
+    color: blue; /* ustawia kolor niebieski */
+    margin: 0; /* usuwa marginesy */
+}
+
+
+/*-----------------------------------------------------PRODUCT.HTML---------------------------------------------------*/
+.main-description {
+    font-size: 32px; /*rozmiar czczionki*/
+    font-weight: bold; /*tekst pogrubiony */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
+}
+
+.product-category {
+    font-size: 32px; /*rozmiar czczionki*/
+    font-weight: bold; /*tekst pogrubiony */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
+}
+
+.product-category-name {
+    font-size: 32px; /*rozmiar czczionki*/
+    font-weight: bold; /*tekst pogrubiony */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
+}
+
+.product-producent {
+    font-size: 32px; /*rozmiar czczionki*/
+    font-weight: bold; /*tekst pogrubiony */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
+}
+
+.product-word-name {
+    font-size: 27px;
+    font-weight: bold; /*tekst pogrubiony */
+    color: blue;
+}
+
+.product-description {
+    font-size: 20px; /*rozmiar czczionki*/
+    font-weight: bold; /*tekst pogrubiony */
+    color: blue; /* Ustaw kolor tekstu na niebieski */
+    line-height: 2.0;
+}
+
+.price {
+    font-weight: bold;
+    font-size:30px;
+    color:blue;
+}
+
+.price:hover {
+    background-color: #A1D0DB; /* Kolor podświetlenia po najechaniu myszką (czerwony) */
+    color: white; /* Zmiana koloru tekstu na biały po najechaniu myszką */
+    transition: 1s, /* Dodaj płynny efekt przejścia dla tła i koloru tekstu */
+    transition: 0.3s;
+}
+
+
+/*--------------------------------------------CATEGORY_PRODUCT.HTML---------------------------------------------------*/
+
+
+/* Styl dla diva z klasą "category-link" */
+.category-link {
+    font-size: 17px; /* ustawia czczionke */
+    font-weight: bold; /* pogrubia tekst */
+    text-decoration: none; /* ustawia dekoracje linku */
+    color: blue; /* ustawia kolor niebieski */
+    transition: 0.3s /* Dodaj płynny efekt przejścia dla tła i koloru tekstu */
+}
+
+/* Styl dla diva z klasą "category-link" */
+.category-link:hover {
+    background-color: #A1D0DB; /* kolor podświetlenia po najechaniu myszką */
+    color: white; /* zmiana koloru tekstu po najechaniu myszką */
+}
+
+/* Styl dla diva z klasą "product-list" */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+
+/* Styl dla diva z klasą "product-item" */
+.product-item {
+    width: calc(50% - 20px); /* Ustala szerokość na 50% z odstępem 20px między nimi */
+    margin: 10px; /* Dodaj odstęp między produktami */
+    padding: 10px; /* ustawia odstep od zawartosci */
+    border: 2px solid #A1D0DB; /* dodaje grubsze obramowanie wokół produktów */
+    border-radius: 10px; /* zaokrągla ramkę */
+    box-sizing: border-box; /* ustala box-sizing na border-box, aby padding i obramowanie nie wpływały na szerokość */
+    box-shadow: 0 0 10px blue; /* niebieski kolor cieni*/
+}

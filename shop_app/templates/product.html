@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
 {% block nowe %}
     {% if product_user %}
-        <h1 class="color-product">Kategoria: {{ product_user.category }}</h1>
-        <h1 class="color-product-h1">{{ product_user.name }}</h1>
-        <p class="color-product">Producent: {{ product_user.producer }}</p>
+    <div>
+        <h1 class="product-category">Kategoria: {{ product_user.category }}</h1>
+        <h1 class="product-category-name">{{ product_user.name }}</h1>
+        <p class="product-producent">Producent: {{ product_user.producer }}</p>
+    </div>
         <br><br>
-        <div class="product-description">
-            <p class="opis-product">Opis:</p>
-            <p class="color-product-description">{{ product_user.description }}</p>
-            <span class="opis_line cena">Cena: {{ product_user.price }}</span>
-        </div>
+    <div class="main-description">
+            <p class="product-word-name">Opis:</p>
+            <p class="product-description">{{ product_user.description }}</p>
+            <span class="price">Cena: {{ product_user.price }}</span>
+    </div>
     {% else %}
         <p>Nie ma produktu o takim ID.</p>
     {% endif %}
